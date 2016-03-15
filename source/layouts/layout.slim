@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title = data.page.title || "Hapimo!"
+    == stylesheet_link_tag "app"
+    == javascript_include_tag  "app"
+    javascript:
+      $(document).ready(function(){
+        $('.article-gallery').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          arrows: false,
+          variableWidth: true
+        });
+      });
+  body
+    div class="article-container article-theme-#{data.page.slug}"
+      .article-mv style="background-image:url(images/mv-#{data.page.number}.jpg) no-repeat;"
+        h1
+          = data.page.title
+        .column-number
+          | コラム
+          = data.page.number
+      .article-content
+        == yield
+        / ## ギャラリー用テンプレート
+        / .article-gallery
+        /   - 5.times do
+        /     .item
+        /       img src="images/tmp/pht-gallery-sample-01.jpg" width="230" height="230" alt=""
+        /       .copy
+        /         | これはダミーコピー。セロもセロのマッチ表情らをタクトにたべ
+      p.text-center
+        a.button.button-wide href="" 読みました

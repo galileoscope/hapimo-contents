@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// -----------------------------------
+// _theme.scss
+// -----------------------------------
+
+.article-container {
+
+  // Dress
+  // -----
+  $color-dress: #ef8c9c !default;
+  &.article-theme-dress {
+    h2 { color: $color-dress; }
+    .slick-dots .slick-active button { background: $color-dress; }
+  }
+
+}

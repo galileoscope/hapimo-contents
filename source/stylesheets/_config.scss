@@ -1,0 +1,29 @@
+// -----------------------------------
+// _config.scss
+// -----------------------------------
+
+// Margin
+// -----
+
+$margin-base:                       40px;
+$margin-half:                       $margin-base / 2;
+$margin-quarter:                    $margin-half / 2;
+
+// Brand Color
+$brand-primary:                     #ef8c9c !default;
+$bg-color:                          #fff !default;
+
+// Text Formats
+$font-family-base:                  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif !default;
+$body-color:                        #595757 !default;
+$link-color:                        #006699 !default;
+$link-color-visited:                #800080 !default;
+$font-size-base:                    0.928571429rem !default;
+$font-size-h1:                      1.61625rem !default;
+$font-size-h2:                      1.3rem !default;
+$font-size-h3:                      1.05rem !default;
+$font-size-h4:                      1.05rem !default;
+$font-size-h5:                      1.05rem !default;
+$font-size-h6:                      1rem !default;
+$base-line-height:                  26.8px;
+
