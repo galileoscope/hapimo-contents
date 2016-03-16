@@ -12,6 +12,7 @@
   &.article-theme-dress {
     h2 { color: $color-dress; }
     .slick-dots .slick-active button { background: $color-dress; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-dress; border-color: $color-dress; }
   }
 
 }
