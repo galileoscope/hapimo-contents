@@ -1,5 +1,14 @@
 # Hapimo! コンテンツ
 
+## INSTALL
+
+```
+$ bundle install
+$ bundle exec middleman b #=> build
+$ bundle exec middleman s #=> server 起動
+```
+
+
 ## TOC
 
 | ページ番号 | 大カテゴリ                    | 小カテゴリ                                   | 記事タイトル                                         |
