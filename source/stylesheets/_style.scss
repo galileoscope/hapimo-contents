@@ -93,6 +93,23 @@
     }
   }
 
+  // Credit
+  // -----
+  .article-credit {
+    padding: $margin-quarter $margin-half;
+    border: 1px solid #eee;
+    font-size: .8rem;
+    h3 { font-size: .88rem; margin-bottom: $margin-quarter; }
+    ul {
+      padding: 0;
+      li {
+        list-style: none;
+        padding-left: .8rem;
+        &:before { content: "※"; margin-left: -.8rem; }
+      }
+    }
+  }
+
 }
 
 
