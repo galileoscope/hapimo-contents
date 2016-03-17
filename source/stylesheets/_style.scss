@@ -19,7 +19,12 @@
   font-size: $font-size-base;
   font-family: $font-family-base;
   color: $body-color;
-  h1 { font-size: $font-size-h1; letter-spacing: .2rem; font-weight: 600; }
+  h1 {
+    font-size: $font-size-h1;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    @media screen and (max-width: 414px) { line-height: 1.2; }
+  }
   h2 { font-size: $font-size-h2; }
   h3 { font-size: $font-size-h3; }
   h4 { font-size: $font-size-h4; }

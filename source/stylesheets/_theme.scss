@@ -4,15 +4,80 @@
 // _theme.scss
 // -----------------------------------
 
+// Settings
+// -----
+
+$color-ceremony: #4dbdf3 !default;
+$color-guest: #ffbe5f !default;
+$color-dress: #ef8c9c !default;
+$color-goods: #35bbab !default;
+$color-cuisine: #ba77f6 !default;
+$color-beauty: #ff9c75 !default;
+$color-table: #e1655c !default;
+$color-welcome-item: #6eaf86 !default;
+$color-effect: #6a77ef !default;
+$color-photo: #a5638c !default;
+
 .article-container {
 
+  // Ceremony
+  &.article-theme-ceremony {
+    h2 { color: $color-ceremony; }
+    .slick-dots .slick-active button { background: $color-ceremony; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-ceremony; border-color: $color-ceremony; }
+  }
+  // Guest
+  &.article-theme-guest {
+    h2 { color: $color-guest; }
+    .slick-dots .slick-active button { background: $color-guest; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-guest; border-color: $color-guest; }
+  }
   // Dress
-  // -----
-  $color-dress: #ef8c9c !default;
   &.article-theme-dress {
     h2 { color: $color-dress; }
     .slick-dots .slick-active button { background: $color-dress; }
     .article-eyecatch .caption, .article-gallery-caption { color: $color-dress; border-color: $color-dress; }
   }
-
+  // Goods
+  &.article-theme-goods {
+    h2 { color: $color-goods; }
+    .slick-dots .slick-active button { background: $color-goods; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-goods; border-color: $color-goods; }
+  }
+  // Cuisine
+  &.article-theme-cuisine {
+    h2 { color: $color-cuisine; }
+    .slick-dots .slick-active button { background: $color-cuisine; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-cuisine; border-color: $color-cuisine; }
+  }
+  // Beauty
+  &.article-theme-beauty {
+    h2 { color: $color-beauty; }
+    .slick-dots .slick-active button { background: $color-beauty; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-beauty; border-color: $color-beauty; }
+  }
+  // Table
+  &.article-theme-table {
+    h2 { color: $color-table; }
+    .slick-dots .slick-active button { background: $color-table; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-table; border-color: $color-table; }
+  }
+  // Welcome Item
+  &.article-theme-welcome-item {
+    h2 { color: $color-welcome-item; }
+    .slick-dots .slick-active button { background: $color-welcome-item; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-welcome-item; border-color: $color-welcome-item; }
+  }
+  // Effect
+  &.article-theme-effect {
+    h2 { color: $color-effect; }
+    .slick-dots .slick-active button { background: $color-effect; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-effect; border-color: $color-effect; }
+  }
+  // Photo
+  &.article-theme-photo {
+    h2 { color: $color-photo; }
+    .slick-dots .slick-active button { background: $color-photo; }
+    .article-eyecatch .caption, .article-gallery-caption { color: $color-photo; border-color: $color-photo; }
+  }
 }
