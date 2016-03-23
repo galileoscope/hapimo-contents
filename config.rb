@@ -8,6 +8,7 @@ configure :development do
   activate :livereload
 end
 
+page "credit.html", :layout => :credit
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
