@@ -18,8 +18,9 @@ html
         });
       });
     css:
-      .article-container  .article-gallery .item .caption h1{
-        width: 680px;
+      .article-container  .article-gallery .item .caption{
+        padding:0;
+        width: 100%;
         text-align: center;
       }
   body
@@ -28,8 +29,7 @@ html
         .item
           = image_tag "images/mv-#{data.page.page_id}.jpg"
           .caption
-            h1
-              = data.page.title
+            h1 = data.page.title
       /.article-mv style="background:url(images/mv-#{data.page.page_id}.jpg) center center / cover no-repeat;"
         /h1
          / = data.page.title
