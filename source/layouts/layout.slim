@@ -17,11 +17,22 @@ html
           //variableWidth: true
         });
       });
+    css:
+      .article-container  .article-gallery .item .caption h1{
+        width: 680px;
+        text-align: center;
+      }
   body
     div class="article-container article-theme-#{data.page.slug}"
-      .article-mv style="background:url(images/mv-000.png),url(images/mv-#{data.page.page_id}.jpg) center center / cover no-repeat;"
-        h1
-          = data.page.title
+      .article-gallery
+        .item
+          = image_tag "images/mv-#{data.page.page_id}.jpg"
+          .caption
+            h1
+              = data.page.title
+      /.article-mv style="background:url(images/mv-#{data.page.page_id}.jpg) center center / cover no-repeat;"
+        /h1
+         / = data.page.title
 
       .article-content
         == yield
