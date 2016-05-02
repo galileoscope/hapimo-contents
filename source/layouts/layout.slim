@@ -19,8 +19,7 @@ html
       });
   body
     div class="article-container article-theme-#{data.page.slug}"
-      .article-mv style="background:-webkit-linear-gradient(270deg, rgba(0,0,0,.5), rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,.5)),url(images/mv-#{data.page.page_id}.jpg) center center / cover no-repeat;"
-
+            .article-mv style="background:url(images/mv-000.png),url(images/mv-#{data.page.page_id}.jpg); background-position: center center;background-repeat: no-repeat; background-size: cover;"
         h1
           = data.page.title
 
